@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { NextFunction ,Request,Response} from "express";
-import * as createError from 'http-errors';
+// import * as createError from 'http-errors';
+var createError =require('http-errors');
 import * as express from 'express';
 import * as path from 'path';
 import * as cookieParser from 'cookie-parser';
@@ -30,8 +32,8 @@ app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function( req: Request, res: Response, next: NextFunction) {
-    console.log("Lmaoo");
-  next(createError(404));
+  
+  next(createError(404,"NOT FOUND!!!"));
 });
 
 // error handler

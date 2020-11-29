@@ -4,11 +4,10 @@
   "description": "Simple express boilerplate for Typescript projects",
   "main": "index.js",
   "scripts": {
-
-        "watch": "tsc --watch",
-        "postinstall":"tsc",
-        "server": "nodemon dist/app.js",
-        "start": "node dist/app.js"
+    "watch": "tsc --watch",
+    "postinstall": "tsc",
+    "server": "nodemon dist/app.js",
+    "start": "node dist/app.js"
   },
   "author": "Frederick Hazel",
   "license": "ISC",
@@ -19,7 +18,7 @@
     "dotenv": "^8.2.0",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
-    "http-errors": "~1.6.3",
+    "http-errors": "^1.8.0",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
